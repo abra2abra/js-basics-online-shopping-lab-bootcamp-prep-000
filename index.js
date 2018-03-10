@@ -46,11 +46,7 @@ function removeFromCart(item) {
     returned = cart.splice(i, 1);
     }
   }
- if(returned.length === 0){
-   return 'That item is not in your cart.';
- } else {
-   return cart;
- }
+return returned.length === 0 ? 'That item is not in your cart.' : cart;
 }
 
 function placeOrder(cardNumber) {
