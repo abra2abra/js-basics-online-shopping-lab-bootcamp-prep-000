@@ -47,7 +47,7 @@ function removeFromCart(item) {
     }
   }
  if(returned.length === 0){
-   alert('some');
+   return 'some';
  } else {
    return cart;
  }
