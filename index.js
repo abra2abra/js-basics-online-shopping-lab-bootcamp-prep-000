@@ -52,7 +52,7 @@ function removeFromCart(item) {
    return cart;
  }
 }
-console.log(removeFromCart('item'));
+
 function placeOrder(cardNumber) {
   // write your code here
   if(cardNumber === null || cardNumber === undefined || cardNumber === ""){
