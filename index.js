@@ -51,11 +51,12 @@ return returned.length === 0 ? 'That item is not in your cart.' : cart;
 
 function placeOrder(cardNumber) {
   // write your code here
+  var tot = total();
   if(cardNumber === null || cardNumber === undefined || cardNumber === ""){
     return "Sorry, we don't have a credit card on file for you."; 
   } else {
     cart = [];
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+    return `Your total cost is $${tot}, which will be charged to the card ${cardNumber}.`;
   }
   
 }
